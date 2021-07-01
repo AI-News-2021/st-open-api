@@ -64,6 +64,7 @@ export const http = async (request: IRequest,
     return await new Promise((resolve, reject) => {
 
         // 1. Create a new XMLHttpRequest object
+        const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
         const xhr = new XMLHttpRequest();
 
         const buildQuery = getQueryParameters(request.queryParameter);

@@ -1,6 +1,6 @@
 {
-  "name": "st-open-api",
-  "version": "1.3.26",
+  "name": "@ai-news-2021/st-open-api",
+  "version": "1.3.27",
   "publishConfig": {
     "access": "public"
   },
@@ -30,7 +30,8 @@
     "node-fetch",
     "st-rm-rf",
     "valid-url",
-    "typescript"
+    "typescript",
+    "xmlhttprequest"
   ],
   "bin": {
     "st-open-api": "./cli.js"
@@ -47,7 +48,8 @@
     "node-fetch": "^2.6.0",
     "st-rm-rf": "^2.0.0-beta.1",
     "typescript": "^3.8.3",
-    "valid-url": "^1.0.9"
+    "valid-url": "^1.0.9",
+    "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {
     "@types/mustache": "^4.0.1",
