@@ -80,7 +80,7 @@ export const http = async (request: IRequest,
             }
         }
         let isDownload = false;
-        if (request.header[HEADER_ACCEPT] === 'application/octet-stream') {
+        if (request.header && request.header[HEADER_ACCEPT] === 'application/octet-stream') {
             isDownload = true;
             xhr.responseType = 'blob';
         }
