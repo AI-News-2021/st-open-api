@@ -59,7 +59,7 @@
         errorHandler
     );
 {{#isJsonResponse}}
-    return JSON.parse(response);
+    return response ? JSON.parse(response) : response;
 {{/isJsonResponse}}
 {{#isPlaintextResponse}}
     return response;
